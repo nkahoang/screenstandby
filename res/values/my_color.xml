@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionBarColor">#171a17</color>
+    <color name="actionBarIndicator">#373a37</color>
+    <color name="textDisabled">#474a47</color>
+    <color name="actionBtnSelectedBg">#00aeef</color>
+    <color name="actionBtnFocusedBg">#ff5110</color>
+    <color name="pink">#e50589</color>
+    <color name="pink_p">#ff0096</color>
+    <color name="pink_f">#ff60be</color>
+    
+    <color name="orange">#ff8a00</color>
+    <color name="orange_p">#ffb400</color>
+    <color name="orange_f">#ffac2a</color>
+    
+    <color name="darkYellow">#dd9c28</color>
+    <color name="darkYellow_p">#ffa910</color>
+    <color name="darkYellow_f">#f1b03d</color>
+    
+    <color name="darkRed">#d13131</color>
+    <color name="darkRed_p">#ff5555</color>
+    <color name="darkRed_f">#e12c2c</color>
+    
+    <color name="green">#009f3c</color>
+    <color name="green_p">#00b35c</color>
+    <color name="green_f">#45de7f</color>
+    
+    <color name="royalBlue">#4169e1</color>
+    <color name="royalBlue_p">#00baff</color>
+    <color name="royalBlue_f">#4872f0</color>
+    
+    <color name="plainBlue">#ff000000</color> 
+    <color name="darkBlue">#ff000000</color>
+    
+    <color name="white">#ffffffff</color>
+    <color name="black">#00000000</color>
+    <color name="grey">#ff333333</color>
+    <color name="darkgrey">#ff202020</color>
+    <color name="lightgrey">#ff555555</color>
+    <color name="darkMetroBlue">#6d8764</color>
+    <color name="darkMetroBlue_p">#647687</color>
+    <color name="darkMetroBlue_f">#46b9f1</color>
+</resources>

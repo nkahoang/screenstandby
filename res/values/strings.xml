@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">Screen Standby</string>
+    <string name="service_remote_receiver">Remote receiver</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Screen Standby</string>
+    <string name="intro">This little app will temporarily turn off screen backlight without putting phone to sleep.</string>
+    <string name="instruction">To turn on the screen again, you can either click on the notification or simply press the power button to lock phone then unlock it</string>
+    <string name="btnRemote">Remote controller</string>
+    <string name="btnOff">Turn off</string>
+    <string name="btnOff_OneTwoDim">One two dim</string>
+    <string name="btnmanualconnect">Manual connect to receiver</string>
+    <string name="btnstopserver">Stop receiver</string>
+    <string name="visitthread">Development thread</string>
+    <string name="strdonation">Donate</string>
+    <string name="freelicense">Free license (If you donated and the app do not recognise, please restart the app)</string>
+    <string name="pref_categ_nonroot_categ">Non ROOT method</string>
+    <string name="pref_nonroot">Use Non ROOT method</string>
+    <string name="pref_nonroot_sum">A screenfilter like method, which darken the screen without touching the hardware (also affect external picture)</string>
+    <string name="pref_nonroot_value">Effectiveness</string>
+    <string name="pref_nonroot_value_sum">How low this method should lower the screen brightness</string>
+    <string name="pref_htmi_broadcast_connect_intent">Intent on HDMI connection</string>
+    <string name="pref_htmi_broadcast_connect_intent_sum">(Advanced) Broadcast an intent when MHL/HDMI connects</string>
+    <string name="pref_htmi_broadcast_disconnect_intent">Intent on HDMI disconnection</string>
+    <string name="pref_htmi_broadcast_disconnect_intent_sum">(Advanced) Broadcast an intent when MHL/HDMI disconnects</string>
+    <string name="pref_htmi_connect_intent">Intent on connection</string>
+    <string name="pref_htmi_disconnect_intent">Intent on disconnection</string>
+    <string name="pref_intent_title">Specify an intent action (Note: intent is always case-sensitive. An example: com.myintent.AwesomeAction)</string>
+    <string-array name="nonrootvalue">
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+        <item>215</item>
+        <item>225</item>
+        <item>240</item>
+        <item>250</item>
+        <item>255</item>
+    </string-array>
+    <string-array name="nonrootnames">
+        <item>70% Brightness (Lightest)</item>
+        <item>60% Brightness</item>
+        <item>50% Brightness</item>
+        <item>40% Brightness</item>
+        <item>25% Brightness</item>
+        <item>20% Brightness (Default)</item>
+        <item>12% Brightness</item>
+        <item>5% Brightness</item>
+        <item>2% Brightness (Darkest)</item>
+        <item>0% Brightness (Screen off)</item>
+    </string-array>
+
+    <string name="pref_categ_shake">Sensor settings</string>
+    <string name="pref_shake_sum">Shaking during screen off toggle between complete and low brightness</string>
+    <string name="pref_shake">Use shaking function</string>
+    <string name="pref_sensitivity">Sensitivity</string>
+    <string name="pref_sensitivity_sum">Choose how sensitive should the program react to your shake</string>
+
+    <string-array name="sensitivityvalue">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="sensitivitynames">
+        <item>Highest sensitivity</item>
+        <item>Higher</item>
+        <item>High</item>
+        <item>Normal</item>
+        <item>Low</item>
+        <item>Lower</item>
+        <item>Lowest</item>
+    </string-array>
+    <string-array name="touchpadvalue">
+        <item>0.5</item>
+        <item>0.75</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="touchpadnames">
+        <item>Slowest</item>
+        <item>Slow</item>
+        <item>Normal</item>
+        <item>Fast</item>
+        <item>Fastest</item>
+    </string-array>
+
+    <string name="pref_categ_methods">Screen off methods</string>
+    <string name="pref_brightness">Zero brightness</string>
+    <string name="pref_brightness_sum">Most popular and should be enabled for all devices</string>
+    <string name="pref_framebuffer">Persistent blank frame</string>
+    <string name="pref_framebuffer_sum">Must be enabled for AMOLED devices (Galaxy S2, S3, etc). Other device may also benefit. This method has no effect to Nexus and some HTC devices.</string>
+    <string name="pref_voltage">Samsung Galaxy S3 compatibility</string>
+    <string name="pref_voltage_sum">May solve problem with Galaxy S3 users. May also help if you have problem turning screen back on. Please note that this is the voltage cut method, which may be dangerous and should only be used if other methods is not working. The app will attempt to restore the minimum voltage that can support the screen to avoid any damage to hardware</string>
+    <string name="pref_blswitch">Linux bl_power switch</string>
+    <string name="pref_blswitch_sum">Native linux method of cutting screen backlight. Pretty slow and should be enabled only if other methods fail to work</string>
+    <string name="pref_categ_version">App version information</string>
+    <string name="pref_update_sum">[To be implemented] Check for new version</string>
+    <string name="pref_update">Check for update</string>
+    <string name="pref_version">Version</string>
+    <string name="pref_lastupdate">Last update</string>
+    <string name="pref_categ_acknowledgement">Special thanks to</string>
+    <string name="pref_tester">Beta testers</string>
+    <string name="pref_donors">Coffee buyers</string>
+    <string name="pref_categ_miscellaneous">Miscellaneous settings</string>
+    <string name="pref_wakelock">Wake-lock</string>
+    <string name="pref_wakelock_sum">Prevent screen from going to sleep during screen off</string>
+    <string name="pref_wifilock">Wifi-lock</string>
+    <string name="pref_wifilock_sum">Prevent wifi from being disconnected during screen off</string>
+    <string name="pref_autobrightness">Handle auto-brightness</string>
+    <string name="pref_autobrightness_sum">If auto-brightness is enabled, the app will change it to manual mode during screen off and toggle it back to auto-brightness when the screen is on again</string>
+    <string name="pref_disabletouchscreen">Disable touch screen</string>
+    <string name="pref_disabletouchscreen_sum">Touchscreen will be temporarily disabled during screen off. Note that statusbar will still be active.</string>
+    <string name="pref_ads_sum">Enable ads to support further development of the app. :) It will not be too annoying</string>
+    <string name="pref_ads">Ads banner</string>
+    <string name="pref_returnhome">Return home screen</string>
+    <string name="pref_returnhome_sum">From main window, pressing turn off backlight will then return to home screen automatically</string>
+    <string name="pref_proximity">Use proximity sensor</string>
+    <string name="pref_proximity_sum">Hover your hand on the sensor to toggle screen off / low brightness</string>
+    <string name="pref_proximity_behaviour">Proximity behaviour</string>
+    <string name="pref_proximity_behaviour_sum">Configure how proximity sensor should toggle screen on/off</string>
+    <string name="btnOn">Emergency on</string>
+    <string name="pref_twostages">Use two-stage screen off</string>
+    <string name="pref_twostages_sum">First press with put a notification. Then press the notification to turn off screen (great for navigating to other app before off screen)</string>
+    <string name="pref_categ_appdetection">App Detection</string>
+    <string name="pref_appdetection">Auto detect app</string>
+    <string name="pref_appdetection_sum">(Experimental) Auto screen off when a selected app is brought to front and screen on when the app is suspended / killed</string>
+    <string name="pref_appdetection_1st">Select 1st app</string>
+    <string name="pref_appdetection_noapp">No app selected</string>
+    <string name="pref_appdetection_2nd">Select 2nd app</string>
+    <string name="pref_appdetection_3rd">Select 3rd app</string>
+    <string name="pref_appdetection_4th">Select 4th app</string>
+    <string name="pref_categ_headset">Headset Detection</string>
+    <string name="pref_headset">Auto Headset Detection</string>
+    <string name="pref_headset_sum">Auto screen off when a headphone/earphone is plugged into the device and screen on after unplugging the cable</string>
+    <string name="pref_headset_run">Run app on headset connect</string>
+    <string name="pref_headset_run_sum">Select an app to run when headset is inserted</string>
+    <string name="pref_headset_close">Close app as headset is removed</string>
+    <string name="pref_headset_close_sum">Automatically close selected app as headset is disconnected</string>
+    <string name="pref_headset_close_home">Return to home screen</string>
+    <string name="pref_headset_close_home_sum">Return to home screen upon headset disconnection</string>
+    <string name="pref_categ_hdmi">HDMI Detection</string>
+    <string name="pref_search_plugin">Long-press Search plugin</string>
+    <string name="pref_hdmi">Auto HDMI/MHL Detection</string>
+    <string name="pref_hdmi_sum">Auto screen off when HDMI/MHL is plugged and screen on after unplugging the cable</string>
+    <string name="pref_categ_twostage">Two-stage screen off</string>
+    <string name="pref_twostage_persist_sum">Let the trigger notification persistent until you manually clear it</string>
+    <string name="pref_twostage_persist">Persistent trigger</string>
+    <string name="pref_buttonbrightness_sum">Change brightness of button backlight as well as screen backlight. May cause flickering in button backlight in some devices</string>
+    <string name="pref_buttonbrightness">Change button backlight</string>
+    <string name="pref_hdmi_run">Run app on HDMI connect</string>
+    <string name="pref_hdmi_run_sum">Select an app to run when HDMI cable connects</string>
+    <string name="pref_categ_usb">USB Accessories Detection</string>
+    <string name="pref_use_usb_detection">Use USB accessories detection</string>
+    <string name="pref_use_usb_detection_sum">Auto screen off / on upon insertion and removal of USB accessories</string>
+    <string name="pref_categ_dock">Dock Detection</string>
+    <string name="pref_categ_bt">Bluetooth Detection</string>
+    <string name="pref_bt">Auto Bluetooth Detection</string>
+    <string name="pref_bt_devicename">Device name to watch</string>
+    <string name="pref_bt_devicename_sum">If specified, bluetooth detector will only react to device(s) whose name contains the string (case-insensitive). Leave blank to watch for any device</string>
+    <string name="pref_bt_sum">Auto screen on / off when a Bluetooth device is connected/paired and disconnected/unpaired</string>
+    <string name="pref_bt_run">Run app on Bluetooth connection / pairing</string>
+    <string name="pref_bt_run_sum">Select an app to run upon Bluetooth device connection / pairing</string>
+    <string name="pref_btrun_close">Close app upon Bluetooth device disconnection / unpairing</string>
+    <string name="pref_btrun_close_sum">Automatically close selected app as Bluetooth is disconnected / unpaired</string>
+    <string name="pref_btrun_close_home">Return to home screen</string>
+    <string name="pref_btrun_close_home_sum">Return to home screen upon Bluetooth disconnection / unpairing</string>
+    <string name="pref_dock">Auto Dock Detection</string>
+    <string name="pref_dock_sum">Auto screen on / off when device is inserted into and removed from dock</string>
+    <string name="pref_dock_run">Run app on Dock insertion</string>
+    <string name="pref_dock_run_sum">Select an app to run when Dock connect</string>
+    <string name="pref_dockrun_close">Close app upon Dock removal</string>
+    <string name="pref_dockrun_close_sum">Automatically close selected app as device is undocked</string>
+    <string name="pref_dockrun_close_home">Return to home screen</string>
+    <string name="pref_dockrun_close_home_sum">Return to home screen upon Dock removal</string>
+    <string name="pref_docksettings">Dock detection settings</string>
+    <string name="pref_docksettings_sum">Configure how dock detection works</string>
+    <string name="pref_dockcar">Car dock detection</string>
+    <string name="pref_dockdesk">Desktop dock detection</string>
+    <string name="pref_dockcar_sum">Turn off screen when device is inserted in a car dock</string>
+    <string name="pref_dockdesk_sum">Turn off screen when device is inserted in a desktop dock</string>
+    <string name="pref_dockanalog">Analog dock detection</string>
+    <string name="pref_dockanalog_sum">Turn off screen when device is inserted in an analog dock</string>
+    <string name="pref_dockdigital">Digital dock detection</string>
+    <string name="pref_dockdigital_sum">Turn off screen when device is inserted in a digital dock</string>
+    <string name="pref_dockremoval">Screen on with dock removal</string>
+    <string name="pref_dockremoval_sum">Turn on screen again when device is removed from any dock</string>
+    <string name="pref_hdmirun_close">Close app as HDMI disconnect</string>
+    <string name="pref_hdmirun_close_sum">Automatically close selected app as HDMI disconnect</string>
+    <string name="pref_hdmirun_close_home">Return to home screen</string>
+    <string name="pref_hdmirun_close_home_sum">Return to home screen upon HDMI disconnection</string>
+    <string name="pref_dockatrix">Motorola Atrix compatibility</string>
+    <string name="pref_dockatrix_sum">Enable compatibility mode for Atrix proprietary docks. Should be enabled only for Atrix/Atrix 2 devices.</string>
+    <string name="pref_dockatrix_lapdock">Lapdock detection</string>
+    <string name="pref_dockatrix_lapdock_sum">Screen off when device is inserted in Motorola Atrix Lapdock.</string>
+    <string name="pref_dockatrix_hd">HD dock detection</string>
+    <string name="pref_dockatrix_hd_sum">Screen off when device is inserted in Motorola Atrix HD dock.</string>
+    <string name="pref_categ_touchpad">Touchpad while screen off</string>
+    <string name="pref_touchpad">Use touchpad function</string>
+    <string name="pref_touchpad_sum">(Experimental!) Device\'s screen will function as a touchpad during screen off. A mouse pointer will float on display</string>
+    <string name="pref_touchpad_setting">Touchpad settings</string>
+    <string name="pref_touchpad_speed">Pointer speed</string>
+    <string name="pref_touchpad_speed_sum">Speed to mouse pointer</string>
+    <string name="pref_touchpad_invert">Invert color of mouse pointer</string>
+    <string name="pref_touchpad_invert_sum">If enabled, use a black mouse pointer instead of a white one</string>
+    <string name="pref_clearall">Reset to default</string>
+    <string name="pref_clearall_sum">Clear every saved preferences back to their default values.\nRecommended if you have force closes or other problems.</string>
+    <string name="pref_log">Enable extensive log</string>
+    <string name="pref_log_sum">Capture every event happened when you use the app (not capturing system events).</string>
+    <string name="pref_log_clear">Clear log</string>
+    <string name="title_activity_shortcut">Screen off shortcut</string>
+    <string name="title_activity_shortcut_on">Screen on shortcut</string>
+    <string name="pref_categ_scrolling">Margin scrolling</string>
+    <string name="pref_touchpad_scroll">Enable margin scrolling</string>
+    <string name="pref_touchpad_scroll_sum">If enabled, the right and bottom sides of touchpad will enable Vertical and Horizontal scrolling respectively</string>
+    <string name="pref_touchpad_scroll_area">Area</string>
+    <string name="pref_touchpad_scroll_area_sum">Select how big is the scrolling area</string>
+    <string name="pref_touchpad_scroll_sensitivity">Sensitivity</string>
+    <string name="pref_touchpad_scroll_sensitivity_sum">Select how sensitive scrolling is</string>
+    <string name="pref_touchpad_scroll_notice">Touchpad scrolling</string>
+    <string name="pref_touchpad_scroll_notice_sum">This feature will take part of the screen width and height and change them into scrolling area. Please note that for the FIRST time you use the feature, the soft-keyboard may not show up when you want to type something. It is normal. To enable it, click on \"Input method\" icon on your status bar and turn \"off\" hardware keyboard</string>
+    <string name="pref_touchpad_onsoftkey">Click on soft keys</string>
+    <string name="pref_touchpad_onsoftkey_sum">For device having on-screen navigation keys (like Galaxy Nexus / Nexus 7), allow mouse pointer to click on those keys</string>
+    <string name="pref_z_sensitivity">Z-axis Sensitivity</string>
+    <string name="pref_z_sensitivity_sum">Choose how sensitive should the device detect facing down</string>
+
+    <string-array name="zaxisvalue">
+        <item>1</item>
+        <item>0</item>
+        <item>-3</item>
+        <item>-5.5</item>
+        <item>-8.5</item>
+    </string-array>
+    <string-array name="zaxisnames">
+        <item>Highest</item>
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+        <item>Lowest</item>
+    </string-array>
+
+    <string name="pref_y_sensitivity">Y-axis Sensitivity</string>
+    <string name="pref_y_sensitivity_sum">Choose how sensitive should the device detect being held bottom up</string>
+
+    <string-array name="yaxisvalue">
+        <item>1</item>
+        <item>0</item>
+        <item>-3</item>
+        <item>-5.5</item>
+        <item>-8.5</item>
+    </string-array>
+    <string-array name="yaxisnames">
+        <item>Highest</item>
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+        <item>Lowest</item>
+    </string-array>
+    <string-array name="scrollingareavalue">
+        <item>0.05</item>
+        <item>0.08</item>
+        <item>0.1</item>
+        <item>0.12</item>
+        <item>0.15</item>
+    </string-array>
+    <string-array name="scrollingareanames">
+        <item>Smaller (5%)</item>
+        <item>Small (8%)</item>
+        <item>Normal (10%)</item>
+        <item>Large (12%)</item>
+        <item>Larger (15%)</item>
+    </string-array>
+    <string-array name="scrollingsensitivityvalue">
+        <item>5</item>
+        <item>8</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="scrollingsensitivitynames">
+        <item>Highest</item>
+        <item>High</item>
+        <item>Normal</item>
+        <item>Low</item>
+        <item>Lowest</item>
+    </string-array>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_xtop_dpichanger">xTop DPI Changer</string>
+    <string name="title_activity_troubleshooting">App troubleshooting</string>
+    <string name="troubleshooting">Troubleshooting</string>
+    <string name="troubleshooting_intro">If you have problem, follow below procedures to make the app works on your device</string>
+    <string name="troubleshooting_hwoverlay">1. Screen turn on unexpectedly / Device freeze or Youtube / Netflix / Video player show a blank frame?</string>
+    <string name="troubleshooting_hwoverlay_text">A temporary fix can be done as follow: \n1) Go to device\'s \"Settings\" - \"Development settings\"\n2) Tick on \"Disable HW Overlay\" (if you can\'t find the option, it may be hidden under Advanced section)</string>
+    <string name="troubleshooting_hwoverlay_button">Go to development settings</string>
+    <string name="troubleshooting_stockdevice">2. Are you Rooted and has BusyBox installed?</string>
+    <string name="troubleshooting_stockrom_text">Make sure that your device is rooted and has the latest version of BusyBox binary installed. Restart the device after installing busybox if necessary. To install busybox, you can hope on Play Store and install a Busybox Installer or simply click on following button</string>
+    <string name="troubleshooting_busybox_button">Check for root and BusyBox</string>
+    <string name="troubleshooting_cleardata">3. Clear app data</string>
+    <string name="troubleshooting_cleardata_text">Clearing app data may help if the app worked before but not anymore. Especially if you made some change in settings or upgraded from old version. Please note that by clearing app data, all of your configurations are reseted to default</string>
+    <string name="troubleshooting_cleardata_btn">Clear all data</string>
+    <string name="troubleshooting_reportbug">4. Reporting bugs and issues</string>
+    <string name="troubleshooting_reportbug_text">If you can\'t still make it run, please generate a log and report bug to developer. You have support from a dedicated developer and development community. Hope to Settings then select \"Enable extensive log\" at the bottom. Run the app, try to recreate the problem. Then go to the app interface, \"Menu\" - \"Print debug info\". Post a log over my email (android@nkahnt.com) or on XDA development thread.</string>
+    <string name="troubleshooting_setting_btn">Open \"Settings\" page to enable \"Extensive log\"</string>
+    <string name="troubleshooting_developmentthread_btn">Go to app development thread</string>
+    <string name="troubleshooting_trybeta">5. Download and try a beta version</string>
+    <string name="troubleshooting_trybeta_text">Beta versions are constantly developed and released. Try one of the latest beta and see if it works for your device?</string>
+    <string name="troubleshooting_trybeta_btn">Download beta version</string>
+    <string name="pref_tempdisablephone">Detect incoming call</string>
+    <string name="pref_tempdisablephone_sum">Turn screen on upon incoming call then back to previous value when call ends</string>
+    <string name="pref_categ_onetwodim">One Two Dim mode</string>
+    <string name="pref_categ_onetwodim_sum">Screen off automatically activates after a defined amount of inactivity</string>
+    <string name="pref_categ_onetwodim_enable">Enable One Two Dim mode</string>
+    <string name="pref_categ_onetwodim_enable_sum">If this mode is enabled, screen will NOT turn off immediately. Instead, it waits for a defined amount of idling time (no user interaction) then shut the screen off. To turn on the screen again, simply tap the screen or other temporary method if enabled (i.e shaking).</string>
+    <string name="pref_categ_onetwodim_timer">Set Timer</string>
+    <string name="pref_categ_onetwodim_timer_sum">Set amount of inactivity time to start screen off</string>
+    <string name="pref_categ_onetwodim_fullscreen">Hide statusbar</string>
+    <string name="pref_categ_onetwodim_fullscreen_sum">If enabled, app will hide status bar whenever one two dim turns screen off</string>
+    <string name="pref_categ_onetwodim_survivescreenlock">Survive screen lock</string>
+    <string name="pref_categ_onetwodim_survivescreenlock_sum">If enabled, One Two Dimmer will survive after screen lock / unlock</string>
+    <string name="pref_categ_onetwodim_boot">Auto start at boot</string>
+    <string name="pref_categ_onetwodim_boot_sum">If enabled, One Two Dimmer will automatically started when device boot (Survive screen lock must be enabled to use this)</string>
+    <string name="pref_brightness_optimize_screenoff">Faster zero brightness mode</string>
+    <string name="pref_brightness_optimize_screenoff_sum">If enabled, zero brightness method will take less time to detect brightness devices. However the option may not work on some devices</string>
+    <string name="pref_categ_otherroot">Other root methods</string>
+    <string name="pref_categ_bkres">Backup and Restore</string>
+    <string name="pref_categ_screenoff_sum">Configure and tweak several methods the app uses to turn off device screen</string>
+    <string name="pref_categ_shaking_sum">Configure shaking / auto face down feature</string>
+    <string name="pref_categ_proximity">Proximity settings</string>
+    <string name="pref_categ_proximity_sum">Configure hovering hand feature</string>
+    <string name="pref_categ_sub_shaking">Shaking detection</string>
+    <string name="pref_categ_sub_facing">Facing up/down detection (Z-axis)</string>
+    <string name="pref_categ_sub_holdupsidedown">Holding up/down detection (Y-axis)</string>
+    <string name="pref_holddown">Use holding up/down detection</string>
+    <string name="pref_holddown_sum">Turn off screen when device is held upside down, turn on when device is held normally (Experimental feature)</string>
+    <string name="pref_facedown">Use facing up/down detection</string>
+    <string name="pref_facedown_sum">Turn off screen when device is facing down, turn on when device is facing up (Experimental feature)</string>
+    <string name="pref_backup">Backup settings</string>
+    <string name="pref_backup_sum">Backup all of your settings to external storage</string>
+    <string name="pref_restore">Restore / Manage settings</string>
+    <string name="pref_restore_sum">Restore or delete saved backups</string>
+    <string name="pref_about">About</string>
+    <string name="pref_about_sum">App information</string>
+    <string name="changelogversion">2</string>
+    <string name="manualbrightness">Manual control</string>
+    <string name="title_activity_manual_brightness_changer">Manual brightness changer</string>
+    <string name="select_receiver_or_sender">Is this device the receiver or controller?</string>
+    <string name="btnreceiver">I am the receiver</string>
+    <string name="btncontroller">I am the controller</string>
+    <string name="pref_categ_mediabuttons">Media buttons toggle</string>
+    <string name="pref_categ_mediabuttons_sum">Configure headset button, volume rockers</string>
+    <string name="pref_use_mediabuttons">Use media buttons</string>
+    <string name="pref_use_mediabuttons_sum">Allow using media buttons (i.e headset buttons or hardware buttons) to toggle screen on, off</string>
+    <string name="pref_categ_volumekeys">Volume keys toggle</string>
+    <string name="pref_use_volumekey">Use volume keys toggle</string>
+    <string name="pref_use_volumekey_sum">Allow using volume up, down keys to toggle screen on, off</string>
+    <string name="pref_volumekey_behaviour">Volume keys behaviour</string>
+    <string name="pref_volumekey_behaviour_sum">Set how volume keys should be responsible for screen on, off</string>
+
+    <string-array name="pref_volumekey_toggle_type_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_volumekey_toggle_type_names">
+        <item>Both keys have same functionality</item>
+        <item>Vol up: screen on/Vol down : screen off</item>
+        <item>Vol up: screen off/Vol down : screen on</item>
+    </string-array>
+
+    <string name="title_activity_remote_control_select">RemoteControlSelectActivity</string>
+    <string name="pref_volumekey_compatibility">Compatibility mode</string>
+    <string name="pref_volumekey_compatibility_sum">Volume key detection compatibility mode with x86, MIPS architecture (use this if normal volume key detection does not work). Not as efficient as normal detection method</string>
+    <string name="pref_use_headsetbutton">Use headset button</string>
+    <string name="pref_use_headsetbutton_sum">Clicking on headset button will toggle screen on, off</string>
+    <string name="pref_use_hardwaremediabutton">Use hardware media buttons</string>
+    <string name="pref_use_hardwaremediabutton_sum">Clicking on hardware media buttons (play/stop/back/next/etc) will toggle screen on, off</string>
+
+    <string-array name="pref_proximity_toggle_type_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_proximity_toggle_type_names">
+        <item>Hover hand to circle between screen on and off</item>
+        <item>Hover hand: screen on. Hand moves out: screen off</item>
+        <item>Hover hand: screen off. Hand moves out: screen on</item>
+    </string-array>
+
+    <string name="title_activity_enable">enable</string>
+    <string name="title_activity_disable">DisableActivity</string>
+    <string name="title_activity_remote_server">receiver</string>
+    <string name="title_activity_remote_controller">RemoteControllerActivity</string>
+    <string name="pref_log_savesend">Save / Send log</string>
+    <string name="pref_log_savesend_sum">Click to save app\'s debug information to storage and show option to directly send log to developer\'s email</string>
+    <string name="title_activity_auto_setting_wizard">Setting wizard</string>
+    <string name="welcomeSettingsWizard">setting wizard</string>
+    <string name="welcomeSettingsWizardText">Please follow the wizard to optimise Screen Standby to best suit your device and use case</string>
+    <string name="welcomeSettingsWizard_Rerun">You can run this wizard again at any time from the app\'s settings</string>
+    <string name="welcomeSettingsWizard_DeviceSelect">Select your device</string>
+    <string name="welcomeSettingsWizard_UsecaseSelect">Select your use case</string>
+    <string name="welcomeSettingsWizard_AppName">SCREEN STANDBY # ROOT</string>
+    <string name="welcomeSettingsWizard_Instruction1">Please select your device and your main purpose of using Screen Standby. The wizard will then select the best settings to your scenario</string>
+    <string name="welcomeSettingsWizard_Instruction2">Important note(s) on your setup</string>
+    <string name="welcomeSettingsWizard_Warn_DisableHW">It is recommended that you enable "Disable Hardware Overlay" in Android\'s Settings -> Developer options to prevent problems</string>
+    <string name="welcomeSettingsWizard_Warn_RootBB">You need root and busybox installed on your device. You can skip this step if you have already rooted and installed busybox on your device</string>
+    <string name="welcomeSettingsWizard_Summary">Here is the summary of what the wizard will perform</string>
+    <string name="welcomeSettingsWizard_ResetPrior">Reset all settings to default</string>
+    <string name="pref_categ_extra_survivescreenlock">Survive screen lock</string>
+    <string name="pref_categ_extra_survivescreenlock_sum">If enabled, screen standby will continue to function after a true device screen lock</string>
+    <string name="pref_runwizard">Run setting wizard</string>
+    <string name="pref_runwizard_sum">Run the wizard to automatically set optimised settings according to your device and use-case</string>
+    <string name="pref_wakelockotd_sum">Overwrite system timeout to prevent device from going to sleep</string>
+    <string name="pref_caller_integration">Outgoing call automator</string>
+    <string name="pref_caller_automator">Use caller automator</string>
+    <string name="pref_caller_automator_sum">If enabled, you can assign a \'quick dial\' number to perform an action (launch Screen Standby, toggle screen on/off or launch other app). Simply make a call to that number in your phone dialer to execute the task</string>
+    <string name="pref_add_action">Add an action</string>
+    <string name="pref_clear_actions">Clear all actions</string>
+    <string name="pref_cutpower">Built-in panel power</string>
+    <string name="pref_cutlcdpanel">Cut power to panel</string>
+    <string name="pref_cutlcdpanel_sum">This method wil attempt to cut power supply to your device built-in panel, providing true screen off and is the most efficient method. However, your device may not be compatible with this</string>
+    <string name="visitwebsite">App website</string>
+    <string name="visitwebsite_long">Screen Standby website</string>
+</resources>

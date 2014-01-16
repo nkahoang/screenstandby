@@ -1,0 +1,73 @@
+<ScrollView
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentTop="true">
+    	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="@dimen/globalPaddingLeft" android:paddingRight="10dp" android:orientation="vertical">
+		    <TextView
+		        android:id="@+id/txtVersion"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="version 2.0"
+		        android:layout_marginBottom="15dp"
+		        android:textStyle="bold"
+		        android:textColor="@android:color/white"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+
+		    <Button
+		        android:id="@+id/button1"
+		        style="@style/btnMetroBlue"
+		        android:drawableTop="@drawable/turnoff"
+		        android:text="@string/btnOff" />
+		    
+			<Button
+		        android:id="@+id/btnOn"
+				style="@style/btnMetroRed"
+				android:drawableTop="@drawable/turnon"
+		        android:text="@string/btnOn"/>
+		</LinearLayout>
+		
+		<RelativeLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="10dp">
+			<Button
+			        android:id="@+id/btnRemote"
+					style="@style/btnMetroGreenBig"
+					android:drawableLeft="@drawable/remoteico"
+			        android:text="@string/btnRemote"/>
+		</RelativeLayout>
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+
+		    <Button
+		        android:id="@+id/btnmanualbrightness"
+		        style="@style/btnMetroYellow"
+		        android:drawableTop="@drawable/manualbrightness"
+		        android:text="@string/manualbrightness" />
+		</LinearLayout>
+		
+		<Button
+		        android:id="@+id/btnxda"
+				style="@style/btnMetroOrangeBig"
+				android:drawableLeft="@drawable/xda"
+		        android:text="@string/visitthread"/>
+		
+		<Button
+		        android:id="@+id/btnwebsite"
+				style="@style/btnMetroDarkBlueBig"
+				android:drawableLeft="@drawable/wsico"
+		        android:text="@string/visitwebsite_long"/>
+		</LinearLayout>
+			
+   		</LinearLayout>
+</ScrollView>

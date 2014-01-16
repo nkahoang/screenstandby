@@ -1,0 +1,101 @@
+# view res/layout/activity_auto_setting_wizard.xml #generated:31
+# view res/layout/activity_main.xml #generated:36
+# view res/layout/activity_main_alt.xml #generated:56
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.google.ads.AdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:152
+-keep class com.nkahoang.screenstandby.AppDetector { <init>(...); }
+
+# view AndroidManifest.xml #generated:219
+-keep class com.nkahoang.screenstandby.AutoSettingWizard { <init>(...); }
+
+# view AndroidManifest.xml #generated:190
+-keep class com.nkahoang.screenstandby.BTReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:130
+-keep class com.nkahoang.screenstandby.BootTimeReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:185
+-keep class com.nkahoang.screenstandby.DisableActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.nkahoang.screenstandby.DockReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:181
+-keep class com.nkahoang.screenstandby.EnableActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class com.nkahoang.screenstandby.HDMIReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:172
+-keep class com.nkahoang.screenstandby.HeadsetReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class com.nkahoang.screenstandby.Main { <init>(...); }
+
+# view AndroidManifest.xml #generated:141
+-keep class com.nkahoang.screenstandby.ManualBrightnessChangerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:158
+-keep class com.nkahoang.screenstandby.MediaButtonControlReceiver { <init>(...); }
+
+# view res/layout/time_picker.xml #generated:23
+# view res/layout/time_picker.xml #generated:26
+# view res/layout/time_picker.xml #generated:29
+-keep class com.nkahoang.screenstandby.NumberPicker { <init>(...); }
+
+# view res/layout/number_picker.xml #generated:21
+# view res/layout/number_picker.xml #generated:5
+-keep class com.nkahoang.screenstandby.NumberPickerButton { <init>(...); }
+
+# view AndroidManifest.xml #generated:233
+-keep class com.nkahoang.screenstandby.OutcomingCallReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:167
+-keep class com.nkahoang.screenstandby.RemoteControlSelectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class com.nkahoang.screenstandby.RemoteControllerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:211
+-keep class com.nkahoang.screenstandby.RemoteServerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:224
+-keep class com.nkahoang.screenstandby.ServiceToggleReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.nkahoang.screenstandby.ShortcutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.nkahoang.screenstandby.ShortcutOnActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.nkahoang.screenstandby.StandbyService { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class com.nkahoang.screenstandby.StandbyToggleReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.nkahoang.screenstandby.StandbyWidgetProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.nkahoang.screenstandby.StandbyWidgetProvider2by2 { <init>(...); }
+
+# view res/layout/time_picker_dialog.xml #generated:2
+-keep class com.nkahoang.screenstandby.TimePicker { <init>(...); }
+
+# view AndroidManifest.xml #generated:121
+-keep class com.nkahoang.screenstandby.TroubleshootingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class com.nkahoang.screenstandby.XTopDPIChanger { <init>(...); }
+
+# view AndroidManifest.xml #generated:205
+-keep class com.nkahoang.screenstandby.remotecontrol.ClientService { <init>(...); }
+
+# view AndroidManifest.xml #generated:200
+-keep class com.nkahoang.screenstandby.remotecontrol.ServerService { <init>(...); }
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statusBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/actionBarColor"
+    android:paddingLeft="@dimen/globalPaddingLeft"
+    android:paddingRight="10dp"
+    android:layout_alignParentTop="true">
+  		<TextView
+       	android:id="@+id/txtDateTime"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_alignParentLeft="true"
+       	android:layout_centerVertical="true"
+       	android:textStyle="bold"
+      		android:textAppearance="?android:attr/textAppearanceSmall" />
+  		<TextView
+       	android:id="@+id/txtBattery"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_alignParentRight="true"
+       	android:layout_centerVertical="true"
+       	android:textStyle="bold"
+      		android:textAppearance="?android:attr/textAppearanceSmall" />
+   </RelativeLayout>

@@ -1,0 +1,61 @@
+<ScrollView
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:fillViewport="false"
+	    android:layout_alignParentTop="true">
+    	<LinearLayout android:layout_width="match_parent" 
+    	    android:layout_height="wrap_content" 
+    	    android:orientation="vertical">
+    	<LinearLayout android:layout_width="match_parent" 
+    	    android:layout_height="wrap_content" 
+    	    android:paddingLeft="@dimen/globalPaddingLeft" 
+    	    android:paddingRight="@dimen/globalPaddingLeft" 
+    	    android:orientation="vertical">
+		    <TextView
+		        android:id="@+id/txtVersion"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="5dp"
+		        android:layout_marginLeft="3dp"
+		        android:textStyle="bold"
+		        android:textColor="@android:color/white"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    <Button android:id="@+id/button1"
+				style="@style/btnHoloStandard"
+				android:layout_weight="1"
+				android:drawableLeft="@drawable/old_turnoff"
+	        	android:text="@string/btnOff" />
+	    
+		<Button android:id="@+id/btnOn"
+				style="@style/btnHoloStandard"
+				android:layout_weight="1"
+				android:drawableLeft="@drawable/old_turnon"
+	        	android:text="@string/btnOn"/>
+			
+		<Button android:id="@+id/btnRemote"
+				style="@style/btnHoloStandard"
+				android:drawableLeft="@drawable/old_remote"
+		        android:text="@string/btnRemote"/>
+		
+		<Button android:id="@+id/btnmanualbrightness"
+		        style="@style/btnHoloStandard"
+		        android:drawableLeft="@drawable/old_manualbrightness"
+		        android:text="@string/manualbrightness" />
+				<Button
+				        android:id="@+id/btnxda"
+						style="@style/btnHoloStandard"
+						android:layout_weight="1"
+						android:drawableLeft="@drawable/old_xda"
+				        android:text="@string/visitthread"/>
+				<Button
+				        android:id="@+id/btnwebsite"
+						style="@style/btnHoloStandard"
+						android:layout_weight="1"
+						android:drawableLeft="@drawable/old_ws"
+				        android:text="@string/visitwebsite_long"/>
+		</LinearLayout>
+			
+   		</LinearLayout>
+</ScrollView>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY">
+	<ScrollView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:layout_below="@+id/statusBar">
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingBottom="60dp"
+		    android:paddingLeft="@dimen/globalPaddingLeft"
+		    android:paddingRight="10dp"
+		    android:paddingTop="10dp"
+		    android:orientation="vertical">
+	    
+		    <TextView
+		        android:id="@+id/txtManualBrightness"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Manual brightness changer"
+		        android:textSize="45dp"
+		        android:layout_marginBottom="5dp"/>
+	
+		    <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="5dp"
+			    android:orientation="horizontal"
+			    android:gravity="center">
+	
+		        <ImageButton
+		            android:id="@+id/btnDarker"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@null"
+		            android:src="@drawable/brightnessico2" />
+	
+		        <SeekBar
+		            android:id="@+id/seekBrightness"
+		            android:layout_width="0dip"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:max="255" />
+	
+		        <ImageButton
+		            android:id="@+id/btnLighter"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@null"
+		            android:src="@drawable/brightnessico" />
+			    
+		    </LinearLayout>
+		    <LinearLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="5dp"
+			    android:paddingLeft="5dp"
+			    android:paddingRight="5dp"
+			    android:orientation="horizontal"
+			    android:gravity="center">
+	
+		        <ImageView
+		            android:layout_width="24dp"
+		            android:layout_height="24dp"
+		            android:src="@drawable/autobrightnessico" />
+	
+		        <CheckBox
+		            android:id="@+id/chkAutoBrightness"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Automatic brightness" />
+	        </LinearLayout>
+	        
+			<View 
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="1dp" 
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		    	android:background="?android:attr/listDivider" 
+		    />
+	
+			<Button
+			    android:id="@+id/btnHomescreenShortcut"
+			    android:background="@drawable/metrobutton"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Create homescreen shortcut for this brightness level"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

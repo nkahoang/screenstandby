@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nkahoang.screenstandby"
+    android:versionCode="13"
+    android:versionName="2.0 Open Source" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="12" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" /> 
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<uses-feature android:name="android.hardware.telephony" android:required="false" />
+	<uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+	<uses-feature android:name="android.hardware.wifi" android:required="false" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.nkahoang.screenstandby.Main"
+            android:hardwareAccelerated="true"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <service android:name="com.nkahoang.screenstandby.StandbyService" />
+
+        <receiver
+            android:name="com.nkahoang.screenstandby.StandbyWidgetProvider"
+            android:label="Screen standby" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+        <receiver
+            android:name="com.nkahoang.screenstandby.StandbyWidgetProvider2by2"
+            android:label="Screen standby (2 by 1)" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info_2by2" />
+        </receiver>
+        <receiver android:name="com.nkahoang.screenstandby.StandbyToggleReceiver" >
+            <intent-filter>
+                <action android:name="com.nkahoang.screenstandby.action.ENABLE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.nkahoang.screenstandby.HDMIReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.HDMI_PLUG" />
+                <action android:name="android.intent.action.HDMI_PLUGGED" />
+                <action android:name="android.intent.action.TVOUT_PLUG" />
+                <!-- <action android:name="com.sonyericsson.intent.action.HDMI_EVENT" /> -->
+                <action android:name="com.motorola.intent.action.externaldisplaystate" />
+                <action android:name="com.motorola.intent.action.EXTDISP_STATUSCHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.nkahoang.screenstandby.DockReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOCK_EVENT" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.nkahoang.screenstandby.ShortcutActivity"
+            android:label="@string/title_activity_shortcut" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nkahoang.screenstandby.ShortcutOnActivity"
+            android:label="@string/title_activity_shortcut_on" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nkahoang.screenstandby.XTopDPIChanger"
+            android:label="@string/title_activity_xtop_dpichanger" >
+        </activity>
+        <activity
+            android:name="com.nkahoang.screenstandby.TroubleshootingActivity"
+            android:icon="@drawable/troubleshootingico"
+            android:label="@string/title_activity_troubleshooting" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nkahoang.screenstandby.Main" />
+        </activity>
+
+        <receiver
+            android:name="com.nkahoang.screenstandby.BootTimeReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.nkahoang.screenstandby.ManualBrightnessChangerActivity"
+            android:icon="@drawable/manualbrightness"
+            android:label="@string/title_activity_manual_brightness_changer" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.nkahoang.screenstandby.AppDetector"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <receiver
+            android:name="com.nkahoang.screenstandby.MediaButtonControlReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.nkahoang.screenstandby.RemoteControlSelectActivity"
+            android:label="@string/title_activity_remote_control_select" >
+        </activity>
+
+        <receiver
+            android:name="com.nkahoang.screenstandby.HeadsetReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.HEADSET_PLUG" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.nkahoang.screenstandby.EnableActivity"
+            android:label="@string/title_activity_enable" >
+        </activity>
+        <activity
+            android:name="com.nkahoang.screenstandby.DisableActivity"
+            android:label="@string/title_activity_disable" >
+        </activity>
+
+        <receiver
+            android:name="com.nkahoang.screenstandby.BTReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.nkahoang.screenstandby.remotecontrol.ServerService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name="com.nkahoang.screenstandby.remotecontrol.ClientService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="com.nkahoang.screenstandby.RemoteServerActivity"
+            android:label="@string/title_activity_remote_server" >
+        </activity>
+        <activity
+            android:name="com.nkahoang.screenstandby.RemoteControllerActivity"
+            android:label="@string/title_activity_remote_controller" >
+        </activity>
+        <activity
+            android:name="com.nkahoang.screenstandby.AutoSettingWizard"
+            android:label="@string/title_activity_auto_setting_wizard" >
+        </activity>
+
+        <receiver
+            android:name="com.nkahoang.screenstandby.ServiceToggleReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.nkahoang.screenstandby.action.TOGGLE" />
+                <action android:name="com.nkahoang.screenstandby.action.REMOTE_CONTROL" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.nkahoang.screenstandby.OutcomingCallReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

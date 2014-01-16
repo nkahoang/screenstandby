@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+     <TextView
+        android:id="@+id/txtWelcomeAutoSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcomeSettingsWizardText"
+        android:drawableLeft="@drawable/ssico"
+        android:drawablePadding="18dp"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+     <TextView
+        android:id="@+id/txtWelcomeAutoSettingsRerun"
+        android:layout_below="@+id/txtWelcomeAutoSettings"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcomeSettingsWizard_Rerun"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/txtWelcomeAutoSettingsRerun"
+         android:layout_marginTop="20dp"
+         android:src="@drawable/autosetting_swipe" />
+     
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom"
+         android:layout_marginBottom="20dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentBottom="true"
+         android:src="@drawable/autosetting_skip" />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<bool name="isTablet">true</bool>
+	<dimen name="mainTextSize">44dp</dimen>
+	<dimen name="globalPaddingLeft">12dp</dimen>
+    <style name="AppTheme" parent="android:Theme.NoTitleBar" />
+    <style name="btnActionButton" parent="@android:style/Widget.ImageButton">
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:paddingTop">5dp</item>
+	    <item name="android:paddingRight">5dp</item>
+	    <item name="android:paddingLeft">5dp</item>
+	    <item name="android:paddingBottom">5dp</item>
+	    <item name="android:background">@drawable/metroactionbtnbg</item>
+    </style>
+    <style name="btnMediaButton" parent="@android:style/Widget.ImageButton">
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:paddingRight">5dp</item>
+	    <item name="android:paddingLeft">5dp</item>
+	    <item name="android:background">@drawable/metromediabtnbg</item>
+    </style>
+    <style name="btnMetroBig" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">290dp</item>
+	    <item name="android:layout_height">140dp</item>
+	    <item name="android:paddingLeft">30dp</item>
+	    <item name="android:layout_marginRight">10dp</item>
+	    <item name="android:layout_marginBottom">10dp</item>
+	    <item name="android:textSize">18dp</item>
+	    <item name="android:textColor">@android:color/white</item>
+	</style>
+    <style name="btnMetro" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">140dp</item>
+	    <item name="android:layout_height">140dp</item>
+	    <item name="android:paddingTop">20dp</item>
+	    <item name="android:layout_marginRight">10dp</item>
+	    <item name="android:layout_marginBottom">10dp</item>
+	    <item name="android:textSize">18dp</item>
+	    <item name="android:textColor">@android:color/white</item>
+	</style>
+	<style name="btnMetroPink" parent="btnMetro">
+	    <item name="android:background">@drawable/metropinkbg</item>
+	</style>
+	<style name="btnMetroYellow" parent="btnMetro">
+	    <item name="android:background">@drawable/metroyellowbg</item>
+	</style>
+	<style name="btnMetroBlue" parent="btnMetro">
+	    <item name="android:background">@drawable/metrobluebg</item>
+	</style>
+	<style name="btnMetroRed" parent="btnMetro">
+	    <item name="android:background">@drawable/metroredbg</item>
+	</style>
+	<style name="btnMetroDarkBlue" parent="btnMetro">
+	    <item name="android:background">@drawable/metrodarkbluebg</item>
+	</style>
+	<style name="btnMetroGreenBig" parent="btnMetroBig">
+	    <item name="android:background">@drawable/metrogreenbg</item>
+	</style>
+	<style name="btnMetroBlackBig" parent="btnMetroBig">
+	    <item name="android:background">@drawable/metroblackbg</item>
+	</style>
+	<style name="btnMetroDarkBlueBig" parent="btnMetroBig">
+	    <item name="android:background">@drawable/metrodarkbluebg</item>
+	</style>
+	<style name="btnMetroOrangeBig" parent="btnMetroBig">
+	    <item name="android:background">@drawable/metroorangebg</item>
+	</style>
+	<style name="btnHoloStandard">
+        <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textColor">@android:color/white</item>
+	</style>	
+</resources>

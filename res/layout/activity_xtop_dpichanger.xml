@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="Select DPI to change to"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<RadioGroup
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+	    android:orientation="vertical"
+    	android:id="@+id/radio_group1">
+    	
+    <RadioButton
+        android:id="@+id/rb120"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:checked="true"
+        android:text="120 dpi" />
+    <RadioButton
+        android:id="@+id/rb240"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rb120"
+        android:text="240 dpi" />
+
+    <RadioButton
+        android:id="@+id/rbCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rb240"
+        android:text="Custom" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtCustomDPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radio_group1"
+        android:layout_toRightOf="@+id/radio_group1"
+        android:enabled="false"
+        android:ems="10"
+        android:inputType="number" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnCreateDPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radio_group1"
+        android:text="Create change DPI shortcut" />
+
+    <Button
+        android:id="@+id/btnChangeDPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnCreateDPI"
+        android:text="Change DPI" />
+
+    <TextView
+        android:id="@+id/txtCurrentDPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/radio_group1"
+        android:layout_alignTop="@+id/radio_group1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

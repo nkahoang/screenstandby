@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    android:id="@+id/pnRemoteControl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    android:gravity="center"
+	    android:paddingBottom="60dp">
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+	    	android:gravity="center">    
+		    <TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="screen standby - "
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="remote controller"
+			    android:textStyle="bold"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+	    </LinearLayout>
+		<LinearLayout
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center"
+		    	android:layout_margin="15dp">
+		    	
+		    	<ImageButton
+				    android:id="@+id/btnScreenOff"
+				    android:layout_width="wrap_content"
+				    android:layout_height="50dp"
+				    android:paddingTop="8dp"
+				    android:paddingBottom="8dp"
+				    android:paddingLeft="15dp"
+				    android:paddingRight="15dp"
+				    android:background="@drawable/metroorangebg"
+				    android:src="@drawable/poweroffico"/>
+		    	<ImageButton
+				    android:id="@+id/btnScreenOn"
+				    android:layout_width="wrap_content"
+				    android:layout_height="50dp"
+				    android:paddingTop="8dp"
+				    android:paddingBottom="8dp"
+				    android:paddingLeft="15dp"
+				    android:paddingRight="15dp"
+				    android:background="@drawable/metrogreenbg"
+				    android:src="@drawable/poweronico"/>
+		    	<Button
+				    android:id="@+id/btnDisconnect"
+				    android:layout_width="fill_parent"
+				    android:layout_height="50dp"
+				    android:paddingLeft="15dp"
+				    android:paddingRight="15dp"
+				    android:drawablePadding="5dp"
+				    android:background="@drawable/metroredbg"
+				    android:drawableLeft="@drawable/disconnectico"
+				    android:text="Disconnect"
+				    android:textAppearance="?android:attr/textAppearanceSmall" />
+    	</LinearLayout>
+		<LinearLayout
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center"
+	    	android:layout_margin="15dp">
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="10dp"
+		        android:gravity="center"
+		        android:orientation="vertical" >
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingBottom="5dp"
+		            android:text="Volume"
+		            android:textAppearance="?android:attr/textAppearanceSmall" />
+		        
+		        <ImageButton
+		            android:id="@+id/btnMediaVolUp"
+		            style="@style/btnMediaButton"
+		            android:contentDescription="Volume Up"
+		            android:src="@drawable/media_vol_up" />
+		
+		        <ImageButton
+		            android:id="@+id/btnMediaVolDown"
+		            style="@style/btnMediaButton"
+		            android:contentDescription="Volume Down"
+		            android:src="@drawable/media_vol_down" />
+		        
+		        <ImageButton
+		            android:id="@+id/btnMediaVolMute"
+		            style="@style/btnMediaButton"
+		            android:layout_marginTop="5dp"
+		            android:contentDescription="Volume Mute"
+		            android:src="@drawable/media_vol_mute" />
+		    </LinearLayout>
+		    <RelativeLayout
+		        android:layout_width="220dp"
+		        android:layout_height="220dp">
+		        <ImageButton
+		            android:id="@+id/btnDpadCenter"
+		            style="@style/btnMediaButton"
+		            android:layout_below="@+id/btnDpadUp"
+		            android:layout_above="@+id/btnDpadDown"
+		            android:layout_toRightOf="@+id/btnDpadLeft"
+		            android:layout_toLeftOf="@+id/btnDpadRight"
+		            android:contentDescription="Dpad center"
+		            android:src="@drawable/dpad_center" />
+		        <ImageButton
+		            android:id="@+id/btnDpadUp"
+		            style="@style/btnMediaButton"
+		            android:layout_centerHorizontal="true"
+		            android:layout_alignParentTop="true"
+		            android:contentDescription="Dpad up"
+		            android:src="@drawable/dpad_up" />
+		        <ImageButton
+		            android:id="@+id/btnDpadLeft"
+		            style="@style/btnMediaButton"
+		            android:layout_centerVertical="true"
+		            android:layout_alignParentLeft="true"
+		            android:contentDescription="Dpad left"
+		            android:src="@drawable/dpad_left" />
+		        <ImageButton
+		            android:id="@+id/btnDpadRight"
+		            style="@style/btnMediaButton"
+		            android:layout_centerVertical="true"
+		            android:layout_alignParentRight="true"
+		            android:contentDescription="Dpad right"
+		            android:src="@drawable/dpad_right" />
+		        <ImageButton
+		            android:id="@+id/btnDpadDown"
+		            style="@style/btnMediaButton"
+		            android:layout_centerHorizontal="true"
+		            android:layout_alignParentBottom="true"
+		            android:contentDescription="Dpad down"
+		            android:src="@drawable/dpad_down" />
+		        <ImageButton
+		            android:id="@+id/btnKeySearch"
+		            style="@style/btnMediaButton"
+		            android:contentDescription="Key search"
+		            android:layout_alignParentRight="true"
+		            android:layout_alignParentTop="true"
+		            android:src="@drawable/key_search"
+		            android:padding="10dp" />
+		        <ImageButton
+		            android:id="@+id/btnKeyInput"
+		            style="@style/btnMediaButton"
+		            android:contentDescription="Key search"
+		            android:layout_alignParentRight="true"
+		            android:layout_alignParentBottom="true"
+		            android:src="@drawable/keyboardico"
+		            android:padding="10dp" />
+		    </RelativeLayout>
+	   	</LinearLayout>
+	   	
+		<Button
+		    android:id="@+id/btnLaunchApp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+	        android:layout_margin="@dimen/globalPaddingLeft"
+		    android:paddingLeft="15dp"
+		    android:paddingRight="15dp"
+		    android:drawablePadding="10dp"
+		    android:background="@drawable/metrobutton"
+		    android:drawableLeft="@drawable/launchappico"
+		    android:text="Launch app remotely"
+		    android:textAppearance="?android:attr/textAppearanceSmall" />
+	   	<LinearLayout
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center">
+		        <ImageButton
+		            android:id="@+id/btnKeyBack"
+		            style="@style/btnMediaButton"
+		            android:contentDescription="Key back"
+		            android:src="@drawable/key_back"
+		            android:layout_margin="5dp"
+		            android:padding="10dp" />
+		        <ImageButton
+		            android:id="@+id/btnKeyHome"
+		            style="@style/btnMediaButton"
+		            android:contentDescription="Key home"
+		            android:src="@drawable/key_home"
+		            android:layout_margin="5dp"
+		            android:padding="10dp" />
+		        <ImageButton
+		            android:id="@+id/btnKeyRecent"
+		            style="@style/btnMediaButton"
+		            android:contentDescription="Key recent"
+		            android:src="@drawable/key_recent"
+		            android:layout_margin="5dp"
+		            android:padding="10dp" />
+		        <ImageButton
+		            android:id="@+id/btnKeyMenu"
+		            style="@style/btnMediaButton"
+		            android:contentDescription="Key menu"
+		            android:src="@drawable/key_menu"
+		            android:layout_margin="5dp"
+		            android:padding="10dp" />
+	    </LinearLayout>
+	    <LinearLayout
+	    	android:layout_width="match_parent"
+	    	android:layout_height="3dp"
+	    	android:gravity="center"
+	    	android:paddingLeft="@dimen/globalPaddingLeft"
+	    	android:paddingRight="@dimen/globalPaddingLeft">
+	        <View 
+	    		android:layout_height="match_parent"
+	    		android:layout_width="wrap_content"
+	    		android:layout_weight="0.25"
+	    		android:background="@drawable/metroredbg"/>
+	        <View 
+	    		android:layout_height="match_parent"
+	    		android:layout_width="wrap_content"
+	    		android:layout_weight="0.25"
+	    		android:background="@drawable/metroyellowbg"/>
+	        <View 
+	    		android:layout_height="match_parent"
+	    		android:layout_width="wrap_content"
+	    		android:layout_weight="0.25"
+	    		android:background="@drawable/metrogreenbg"/>
+	        <View 
+	    		android:layout_height="match_parent"
+	    		android:layout_width="wrap_content"
+	    		android:layout_weight="0.25"
+	    		android:background="@drawable/metrobluebg"/>
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:layout_margin="@dimen/globalPaddingLeft"
+	        android:gravity="center"
+	        android:orientation="vertical" 
+	        android:background="@drawable/metrobuttongrey">
+			<LinearLayout
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center">
+				<ImageButton
+				    android:id="@+id/btnMediaPause"
+				    android:src="@drawable/media_pause"
+				    android:contentDescription="Pause"
+				    style="@style/btnMediaButton" />
+				<ImageButton
+				    android:id="@+id/btnMediaPlay"
+				    android:src="@drawable/media_play"
+				    android:contentDescription="Play"
+				    style="@style/btnMediaButton" />
+				<ImageButton
+				    android:id="@+id/btnMediaStop"
+				    android:src="@drawable/media_stop"
+				    android:contentDescription="Stop"
+				    style="@style/btnMediaButton" />
+			</LinearLayout>
+			<LinearLayout
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center">
+				<ImageButton
+				    android:id="@+id/btnMediaBack"
+				    android:src="@drawable/media_back"
+				    style="@style/btnMediaButton" />
+				<ImageButton
+				    android:id="@+id/btnMediaRewind"
+				    android:src="@drawable/media_rewind"
+				    style="@style/btnMediaButton" />
+				<ImageButton
+				    android:id="@+id/btnMediaFF"
+				    android:src="@drawable/media_ff"
+				    style="@style/btnMediaButton" />
+				<ImageButton
+				    android:id="@+id/btnMediaNext"
+				    android:src="@drawable/media_next"
+				    style="@style/btnMediaButton" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

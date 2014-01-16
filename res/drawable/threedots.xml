@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/circleindicator" />
+    <item android:left="10dp" android:drawable="@drawable/circleindicator" />
+    <item android:left="20dp" android:drawable="@drawable/circleindicator" />
+</layer-list>

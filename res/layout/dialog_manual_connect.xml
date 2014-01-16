@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/globalPaddingLeft"
+    android:paddingRight="@dimen/globalPaddingLeft" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the receiver&apos;s IP address:"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/pnIPTextboxes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text"
+        android:layout_below="@+id/text"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/txtIP1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:inputType="number"
+            android:maxLength="3" 
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtIP2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:inputType="number"
+            android:maxLength="3" 
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtIP3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:inputType="number"
+            android:maxLength="3" 
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtIP4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:inputType="number"
+            android:maxLength="3"
+            android:gravity="center" 
+            android:textAppearance="?android:attr/textAppearanceLarge">
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pnPort"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text"
+        android:layout_below="@+id/pnIPTextboxes"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:gravity="right" >
+     
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+	        android:text="Enter service port:"
+	        android:textStyle="bold" />
+	    
+        <EditText
+            android:id="@+id/txtPort"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:inputType="number"
+            android:maxLength="5"
+            android:gravity="center" 
+            android:textAppearance="?android:attr/textAppearanceLarge">
+        </EditText>   
+     </LinearLayout>
+</RelativeLayout>

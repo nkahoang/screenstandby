@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="2dp">
+	<LinearLayout    
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    <TextView
+		    android:id="@+id/txtInstructionStep2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/welcomeSettingsWizard_Instruction2"
+	        android:gravity="center_vertical"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textStyle="bold"
+	        android:layout_marginBottom="15dp"/>
+	    
+		<LinearLayout
+		    android:id="@+id/pnHWOverlay"    
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_marginBottom="15dp"
+		    android:visibility="invisible">
+		    <TextView
+			    android:id="@+id/txtHWOverlay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/welcomeSettingsWizard_Warn_DisableHW"
+		        android:gravity="center_vertical"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:paddingLeft="6dp"
+		        android:layout_marginBottom="5dp"/>
+			<Button
+			    android:id="@+id/btnDeveloperSettings"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/metrobutton"
+			    android:paddingLeft="@dimen/globalPaddingLeft"
+			    android:paddingRight="@dimen/globalPaddingLeft"
+			    android:text="Go to Android's developer settings"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+		</LinearLayout>
+		<LinearLayout
+		    android:id="@+id/pnRoot"    
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:visibility="invisible">
+		    <TextView
+			    android:id="@+id/txtRoot"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/welcomeSettingsWizard_Warn_RootBB"
+		        android:gravity="center_vertical"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:layout_marginBottom="5dp"/>
+			<Button
+			    android:id="@+id/btnCheckRoot"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/metrobutton"
+			    android:paddingLeft="@dimen/globalPaddingLeft"
+			    android:paddingRight="@dimen/globalPaddingLeft"
+			    android:text="Check root and busybox"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

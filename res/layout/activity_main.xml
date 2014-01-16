@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY">
+	<LinearLayout
+	    android:id="@+id/titleBar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/globalPaddingLeft">
+	    		<TextView
+        		android:id="@+id/txtTitle"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="screen standby"
+        		android:textSize="@dimen/mainTextSize"
+        		android:paddingRight="18dp"/>
+	    		
+	    		<Button
+        		android:id="@+id/txtTitleNex"
+        		android:background="@null"
+        		android:gravity="left"
+        		android:singleLine="true" 
+        		android:ellipsize="end"
+        		android:maxLines="1"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:text="settings"
+        		android:textColor="@color/textDisabled"
+        		android:textSize="38dp"/>
+	</LinearLayout>
+	
+    <android.support.v4.view.ViewPager
+		android:id="@+id/mainpager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fadingEdge="horizontal" 
+		android:layout_below="@+id/titleBar"
+		android:layout_above="@+id/indicatorBar"/>
+	    
+	<LinearLayout
+	    android:id="@+id/actionBar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+		android:background="@drawable/abs__ab_bottom_solid_dark_holo"
+	    android:layout_alignParentBottom="true">
+		<ImageButton
+		    style="@style/btnActionButton"
+		    android:id="@+id/btntroubleshooting"
+		    android:contentDescription="Video clips"
+		    android:src="@drawable/troubleshootingico"/>
+		
+		<ImageButton
+		    style="@style/btnActionButton"
+		    android:id="@+id/btnVidClip"
+		    android:contentDescription="Video clips"
+		    android:src="@drawable/vidclipico"/>
+		
+		<ImageButton
+		    style="@style/btnActionButton"
+		    android:id="@+id/btnSettings"
+		    android:contentDescription="Settings"
+		    android:src="@drawable/settings"/>
+	</LinearLayout>
+	
+	<ImageButton
+	    style="@style/btnActionButton"
+	    android:id="@+id/btnOverflows"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:src="@drawable/overflowdots"
+	    android:padding="6dp"
+	    android:layout_alignTop="@+id/actionBar"
+	    android:layout_alignParentRight="true" 
+	    />
+	<LinearLayout
+	    android:id="@+id/indicatorBar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:layout_above="@+id/actionBar">
+		<View 
+		    android:id="@+id/indicator1"
+		    android:layout_height="10dp"
+		    android:layout_width="10dp"
+		    android:background="@drawable/circleindicator_selected"
+		    android:layout_marginRight="5dp"/> 
+		<View 
+		    android:id="@+id/indicator2"
+		    android:layout_height="10dp"
+		    android:layout_width="10dp"
+		    android:background="@drawable/circleindicator"
+		    android:layout_marginRight="5dp"/>
+		<View 
+		    android:id="@+id/indicator3"
+		    android:layout_height="10dp"
+		    android:layout_width="10dp"
+		    android:background="@drawable/circleindicator"/> 
+	</LinearLayout>
+</RelativeLayout>

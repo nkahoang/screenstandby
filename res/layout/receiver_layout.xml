@@ -1,0 +1,112 @@
+<ScrollView
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentTop="true"
+	    android:paddingLeft="@dimen/globalPaddingLeft"
+	    android:paddingRight="@dimen/globalPaddingLeft">
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="@dimen/globalPaddingLeft"
+		    android:orientation="vertical">
+		    <LinearLayout
+		        android:id="@+id/pnConnected"
+		        android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingBottom="15dp"
+			    android:gravity="center"
+			    android:visibility="visible">
+			    <TextView
+			        	android:id="@+id/txtConnected"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="Connected"
+					    android:textSize="44sp"
+					    android:textStyle="bold"
+					    android:shadowColor="#ffffff"
+					    android:shadowRadius="5"
+					    android:textColor="#04aeda"
+					    android:textAppearance="?android:attr/textAppearanceLarge" />
+		    </LinearLayout>
+		    <LinearLayout
+		        android:id="@+id/pnNotConnect"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+		    	android:paddingBottom="@dimen/globalPaddingLeft"
+			    android:gravity="center_vertical">
+				<LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical">
+					<TextView
+					    android:id="@+id/txtStatus"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="Receiver is configuring"
+					    android:textStyle="bold"
+					    android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+					<TextView
+					    android:id="@+id/txtClient"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="please wait..."
+					    android:textAppearance="?android:attr/textAppearanceMedium" />
+				</LinearLayout>
+				<ProgressBar
+				    android:id="@+id/progRunning"
+				    style="?android:attr/progressBarStyle"
+				    android:paddingTop="5dp"
+				    android:layout_gravity="center"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content" />
+			</LinearLayout>
+
+			<LinearLayout
+			    android:id="@+id/pnServerInfo"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="10dp"
+			    android:background="@drawable/metrobuttongrey"
+			    android:padding="10dp"
+			    android:visibility="gone">
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:paddingBottom="5dp"
+				    android:layout_gravity="center"
+				    android:text="Receiver info:"
+				    android:textStyle="bold"
+				    android:textAppearance="?android:attr/textAppearanceLarge" />
+				<TextView
+				    android:id="@+id/txtServerName"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+				<TextView
+				    android:id="@+id/txtServerIP"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+				<TextView
+				    android:id="@+id/txtServerWifi"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:textAppearance="?android:attr/textAppearanceMedium" />
+			    <Button
+			        android:id="@+id/btnStop"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="2dp"
+			        android:background="@drawable/metrobuttonred"
+			        android:paddingTop="12dp"
+			        android:text="@string/btnstopserver"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:textColor="@color/white"
+			        android:textSize="20dp" />
+			</LinearLayout>
+	    </LinearLayout>
+</ScrollView>

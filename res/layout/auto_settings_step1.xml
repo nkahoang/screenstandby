@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="2dp">
+<RelativeLayout    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+	    android:id="@+id/txtInstructionStep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcomeSettingsWizard_Instruction1"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="15dp"/>
+    
+    <TextView
+	    android:id="@+id/txtSelectDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInstructionStep1"
+        android:text="@string/welcomeSettingsWizard_DeviceSelect"
+        android:drawableLeft="@drawable/phoneico"
+        android:drawablePadding="25dp"
+        android:paddingLeft="14dp"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	<Spinner
+	    android:id="@+id/spinnerDevices"
+	    android:layout_marginTop="8dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/txtSelectDevice"
+	    />
+	
+    <TextView
+	    android:id="@+id/txtSelectUsecase"
+	    android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerDevices"
+        android:text="@string/welcomeSettingsWizard_UsecaseSelect"
+        android:drawableLeft="@drawable/launchappico"
+        android:drawablePadding="18dp"
+        android:paddingLeft="8dp"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	<Spinner
+	    android:id="@+id/spinnerUsecase"
+	    android:layout_marginTop="8dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/txtSelectUsecase"
+	    />
+
+	<CheckBox
+	    android:id="@+id/chkResetAll"
+	    android:layout_marginTop="3dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/spinnerUsecase"
+	    android:text="@string/welcomeSettingsWizard_ResetPrior" />
+
+</RelativeLayout>
+</ScrollView>

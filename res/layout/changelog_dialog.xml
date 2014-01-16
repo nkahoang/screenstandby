@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:theme="@android:style/Theme.Holo.DialogWhenLarge">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- android:background="#FFEEAA22" -->
+        <ImageView
+        	android:src="@drawable/developermessage"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:scaleType="center"
+        	android:background="#FFAA0000"
+        	android:contentDescription="@string/app_name" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical">
+        
+		<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:text="Happy New Year to you!"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+	    <View 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="1dp" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	    	android:background="?android:attr/listDivider" 
+	    />
+	    
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="2dp"
+		    android:text="App auto-detection"
+		    android:textStyle="bold"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="5dp" >
+
+			<ImageView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:paddingRight="4dp"
+			    android:src="@drawable/appico" />
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Turn off screen automatically with the app of your choice! Find it in Settings - Auto Detection"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		</LinearLayout>
+
+		<View 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="1dp" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	    	android:background="?android:attr/listDivider" 
+	    />
+		
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="2dp"
+		    android:text="A big thank you to Styles Vancleave"
+		    android:textStyle="bold"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="With his very generous donation that is enough to buy me more than a year worth of daily coffee. It greatly helps further development of this app. Thank you again"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		
+		<View 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="1dp" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	    	android:background="?android:attr/listDivider" 
+	    />
+		
+		<CheckBox
+		    android:id="@+id/chkDoNotShow"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Do not show this message again" />
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

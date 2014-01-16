@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentTop="true"
+	    android:paddingLeft="@dimen/globalPaddingLeft"
+	    android:paddingRight="10dp">
+	    
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+
+			<TextView
+			    android:id="@+id/txtVersion"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="App version"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			<TextView
+			    android:id="@+id/txtVersionText"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="[app_version_here]"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+			<Button
+			    android:id="@+id/btnUpdate"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="2dp"
+			    android:paddingLeft="5dp"
+			    android:paddingRight="5dp"
+			    android:background="@drawable/metrobutton"
+			    android:text="Check for update"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+			<View 
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="1dp" 
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		    	android:background="?android:attr/listDivider" />
+		    	
+			<View 
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="1dp" 
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		    	android:background="?android:attr/listDivider" />
+			
+			<TextView
+			    android:id="@+id/txtDeveloper"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Main developer"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			<TextView
+			    android:id="@+id/txtDeveloperText"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Hoang Nguyen (nkahoang)"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			<View 
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="1dp" 
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		    	android:background="?android:attr/listDivider" />
+			
+			<TextView
+			    android:id="@+id/txtFinancial"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Financial supporter"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			<TextView
+			    android:id="@+id/txtFinancialText"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Styles Vancleave"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			<View 
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="1dp" 
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		    	android:background="?android:attr/listDivider" />
+			
+			<TextView
+			    android:id="@+id/txtBetaTester"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Beta testers"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			<TextView
+			    android:id="@+id/txtBetaTesterText"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="ppmeis, winsettr, mnsk, cocatriz, evilmtv, TheDarkLux, idelgado782, stargate125645"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			<View 
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="1dp" 
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		    	android:background="?android:attr/listDivider" />
+			
+			<TextView
+			    android:id="@+id/txtCoffeeBuyers"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Coffee Buyers"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			<TextView
+			    android:id="@+id/txtCoffeeBuyersText"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="alsheeba (x2), epolaris, agronick, jjwatmyself, jdbaldi, lilfellabob, julesss2, jhanson, idelgado782, Magissia (x2), petrossa, Steven, sathelate (x3), stargate125645, Tim, taijohnsen, xCaldazar, felix, MichaelMotes"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			<View 
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="1dp" 
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		    	android:background="?android:attr/listDivider" />
+			
+			<TextView
+			    android:id="@+id/txtCommunities"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Other contributors / communities"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			<TextView
+			    android:id="@+id/txtCommunitiesText"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="jjwatmyself (Atrix community), sathelate (auto brightness bug), epolaris (HDMI features), idelgado782 and stargate125645 (US Galaxy S3), doctor.krotch (youtube clip)"
+			    android:textAppearance="?android:attr/textAppearanceSmall" />
+	    </LinearLayout>
+</ScrollView>

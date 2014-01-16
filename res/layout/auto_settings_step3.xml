@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="2dp">
+	<LinearLayout    
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+
+		<CheckBox
+		    android:id="@+id/chkNewInterface"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="5dp"
+		    android:text="Use new User Interface" />
+
+	    <TextView
+		    android:id="@+id/txtInstructionStep3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/welcomeSettingsWizard_Summary"
+	        android:gravity="center_vertical"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:layout_marginBottom="15dp"/>
+
+	    <TextView
+	        android:id="@+id/txtSummary"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	</LinearLayout>
+</ScrollView>

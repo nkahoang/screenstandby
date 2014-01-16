@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autoconf>
+	<devices>
+		<!--filterModel="" 
+		    filterManufacturer="" 
+			filterBrand=""
+			filterHardware="" 
+			filterDisplay="" 
+			filterProduct=""
+			filterPlatform=""
+			setZeroBrightnessMethod="[true/false]" 
+			setFasterZeroBrightness="[true/false]"
+			setPersistentBlankSwitch="[true/false]" 
+			setLinuxBlSwitch="[true/false]"
+			setSGS3Compatibility="[true/false]" 
+			setNonRoot="[true/false]"
+			setBrightnessPath="/path" 
+			setFb0Path="/path"
+			setJBDisplayHWOverlay="[true/false]"
+			setRequireRoot="[true/false]"
+			setAutoHDMI="[true/false]"
+			setAcceleratorSensor="[true/false]"
+			setProximitySensor="[true/false]"
+			setProximityMode="[hover-screenoff/hover-screenon/toggle]"
+			setSurviveScreenLock="[true/false]"
+			setWakeLock="[true/false]"
+			setVolumeButton="[true/false]"-->
+		<device displayName="Generic Android device"
+				setZeroBrightnessMethod="true"
+				setPersistentBlankSwitch="true" setRefreshRate="8000"/>
+				
+		<device displayName="Generic Samsung device" filterManufacturer="samsung"
+				setZeroBrightnessMethod="true"
+				setPersistentBlankSwitch="true" setJBDisplayHWOverlay="true"/>
+				
+		<device displayName="Generic HTC device" filterManufacturer="htc"
+				setZeroBrightnessMethod="true"
+				setPersistentBlankSwitch="false" setRefreshRate="3000"/>
+
+		<device displayName="Generic LG device" filterManufacturer="lg"
+				setZeroBrightnessMethod="true"
+				setPersistentBlankSwitch="true" setRefreshRate="8000"/>				
+		
+		<device displayName="Generic Sony device" filterManufacturer="sony"
+				setZeroBrightnessMethod="true"
+				setPersistentBlankSwitch="false" setRefreshRate="8000"/>
+				
+		<device displayName="Generic Motorola device" filterManufacturer="moto"
+				setZeroBrightnessMethod="true"
+				setPersistentBlankSwitch="true" setRefreshRate="8000"/>
+				
+		<device displayName="Generic Nexus device" filterModel="nexus"
+				setZeroBrightnessMethod="true"
+				setPersistentBlankSwitch="false" setRefreshRate="3000"/>
+		
+		<device displayName="HTC Sensation Series" filterModel="Sensation"
+				setPersistentBlankSwitch="false"
+				setFastZeroBrightness="false"/>
+		
+		<device displayName="HTC EVO Series" filterModel="jewel"
+				setPersistentBlankSwitch="false"
+				setFastZeroBrightness="false"
+				setRefreshRate="2000"/>
+				
+		<device displayName="HTC One" filterModel="HTCONE"
+				setPersistentBlankSwitch="false" setRefreshRate="3000"/>
+								
+		<device displayName="HTC One X (Tegra 3 Quad)" filterModel="EndeavorU" filterManufacturer="HTC"
+				setPersistentBlankSwitch="true" setRefreshRate="8000"/>
+				
+		<device displayName="HTC One X (Dual-core)/One XL" filterModel="evita"
+				setPersistentBlankSwitch="false" setRefreshRate="3000"/>
+				
+		<device displayName="Sony MT11i" filterModel="mt11i"
+				setPersistentBlankSwitch="false" setFasterZeroBrightness="false"/>
+				
+		<device displayName="Sony Xperia Z" filterModel="l36h"
+				setPersistentBlankSwitch="false" setFasterZeroBrightness="false" setRefreshRate="3000"/>
+				
+		<device displayName="LG Google Nexus 4" filterHardware="mako" filterManufacturer="lg" filterBrand="google"
+				setPersistentBlankSwitch="false" setRefreshRate="4000"
+				setBrightnessPath="/sys/devices/platform/msm_fb.525825/leds/lcd-backlight/brightness"/>
+				
+		<device displayName="Samsung Galaxy Nexus" filterModel="galaxy nexus"
+				setPersistentBlankSwitch="false" setBrightnessPath="/sys/devices/omapdss/display0/backlight/s6e8aa0/brightness"
+				setJBDisplayHWOverlay="true"/>
+		
+		<device displayName="Samsung Galaxy S3 (US)" filterManufacturer="samsung" filterPlatform="msm8960"
+				filterModel="SCH-I535" setSGS3Compatibility="true"
+				setJBDisplayHWOverlay="true"/>
+		
+		<device displayName="Samsung Galaxy S2 (International)" filterManufacturer="samsung"
+				filterModel="GT-I9100" setJBDisplayHWOverlay="true"/>
+				
+		<device displayName="Samsung Galaxy S3 (International)" filterManufacturer="samsung" filterPlatform="exynos4"
+				filterModel="GT-I9300" setJBDisplayHWOverlay="true"/>
+				
+		<device displayName="Samsung Galaxy S4 (9500)" filterManufacturer="samsung"
+				filterModel="GT-I9500" setJBDisplayHWOverlay="true"/>
+				
+		<device displayName="Samsung Galaxy S4 (LTE - 9505)" filterManufacturer="samsung"
+				filterModel="GT-I9505" setJBDisplayHWOverlay="true"/>
+				
+		<device displayName="Samsung Galaxy S4 (E300K)" filterManufacturer="samsung"
+				filterModel="E300K" setJBDisplayHWOverlay="true"/>
+				
+		<device displayName="Samsung Galaxy Note 2 (GSM International)" 
+			    filterManufacturer="samsung" filterPlatform="exynos4" filterModel="GT-N7105"
+				setPersistentBlankSwitch="true" setJBDisplayHWOverlay="true"/>
+				
+		<device displayName="Samsung Galaxy Note 2 (LTE)"
+			    filterManufacturer="samsung" filterPlatform="exynos4"
+				filterModel="GT-N7100"
+				setPersistentBlankSwitch="true"
+				setJBDisplayHWOverlay="true"/>
+				
+		<device displayName="Samsung Nexus S" filterModel="nexus s"
+				setPersistentBlankSwitch="true" setBrightnessPath="/sys/class/backlight/s5p_bl/brightness"
+				setNonRoot="true"/>			
+				
+		<device displayName="Motorola Atrix" filterModel="atrix" filterBrand="semc"
+				setPersistentBlankSwitch="false" setFb0Path="/sys/devices/virtual/graphics/fb0/blank"/>
+				
+		<device displayName="Mediacom GT-P5113" filterModel="gt-p5113"
+				setFb0Path="/sys/devices/platform/rk-fb/graphics/fb0/blank"/>
+	</devices>
+	<usecases>
+		<usecase displayName="Streaming / Mirroring to external display"
+				 setRequireRoot="true" setNonRoot="false" setAutoHDMI="true" setWakeLock="true"/>
+				  
+		<usecase displayName="Using ARLiberator / other car navigator"
+				 setRequireRoot="true" setNonRoot="false" setAcceleratorSensor="false" setWakeLock="true"/>
+		
+		<usecase displayName="Turn screen off without a external display"
+		 		 setJBDisplayHWOverlay="false" setNonRoot="true" setWakeLock="true"/>
+				 
+		<usecase displayName="Permanent screen off (for visual-impaired)" 
+				 setWakeLock="true" setSurviveScreenLock="true" />
+		
+		<usecase displayName="Playing Ingress" 
+				 setRequireRoot="false"  setJBDisplayHWOverlay="false"
+				 setNonRoot="true" setAcceleratorSensor="false"
+				 setProximitySensor="true" setProximityMode="hover-screenoff"
+				 setSurviveScreenLock = "false" setWakeLock="true" setVolumeButton="true"/>
+				  
+		<usecase displayName="Listening to Youtube" 
+		 		 setRequireRoot="false"  setJBDisplayHWOverlay="false"
+				 setNonRoot="true" setAcceleratorSensor="false" 
+				 setWakeLock="true" setVolumeButton="false"/>
+				 
+		<usecase displayName="Custom (Set manually later)"
+				 setJBDisplayHWOverlay="true" />
+	</usecases>
+</autoconf>

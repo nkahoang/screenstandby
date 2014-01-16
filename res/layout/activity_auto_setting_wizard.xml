@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/globalPaddingLeft"
+    android:paddingRight="@dimen/globalPaddingLeft"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AutoSettingWizard" >
+    
+	<TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcomeSettingsWizard_AppName"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:layout_marginBottom="10dp"/>    
+        
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcomeSettingsWizard"
+        android:textSize="@dimen/mainTextSize"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="-15dp"
+        android:layout_below="@+id/txtAppName" 
+        android:layout_marginBottom="10dp"/>    
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navBar"
+        android:layout_below="@+id/txtTitle"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="2dp"
+        android:overScrollMode="ifContentScrolls" />
+    
+    <RelativeLayout
+		android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+		<Button
+		    android:id="@+id/btnBack"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/metrobuttongrey"
+		    android:paddingLeft="@dimen/globalPaddingLeft"
+		    android:paddingRight="@dimen/globalPaddingLeft"
+		    android:paddingBottom="2dp"
+		    android:text="Skip wizard"
+		    android:textAppearance="?android:attr/textAppearanceSmall" />
+		<Button
+		    android:id="@+id/btnNext"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/metrobutton"
+		    android:paddingLeft="30dp"
+		    android:paddingRight="30dp"
+		    android:text="Next"
+		    android:layout_alignParentRight="true"
+		    android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<bool name="isTablet">true</bool>
+    <dimen name="mainTextSize">48dp</dimen>
+    <dimen name="globalPaddingLeft">20dp</dimen>
+    <style name="btnActionButton" parent="@android:style/Widget.ImageButton">
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:paddingTop">5dp</item>
+	    <item name="android:paddingRight">5dp</item>
+	    <item name="android:paddingLeft">5dp</item>
+	    <item name="android:paddingBottom">5dp</item>
+	    <item name="android:background">@drawable/metroactionbtnbg</item>
+    </style>
+    <style name="btnMetroBig" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">330dp</item>
+	    <item name="android:layout_height">160dp</item>
+	    <item name="android:paddingLeft">30dp</item>
+	    <item name="android:layout_marginRight">10dp</item>
+	    <item name="android:layout_marginBottom">10dp</item>
+	    <item name="android:textSize">20dp</item>
+	    <item name="android:textColor">@color/white</item>
+	</style>
+    <style name="btnMetro" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">160dp</item>
+	    <item name="android:layout_height">160dp</item>
+	    <item name="android:paddingTop">25dp</item>
+	    <item name="android:layout_marginRight">10dp</item>
+	    <item name="android:layout_marginBottom">10dp</item>
+	    <item name="android:textSize">20dp</item>
+	    <item name="android:textColor">@color/white</item>
+	</style>
+</resources>
